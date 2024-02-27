@@ -53,11 +53,11 @@
 <div class="row categorie">
     <h1 class="text-center">SYMFONY</h1>
     <div class="col-8" >
-        <p>Nous avons mis en place le framwork Symfony afin d'accéder au informations souhaité</p> 
+        <p>Nous avons mis en place le framework Symfony afin d'accéder aux informations souhaitées</p> 
            <ul>
-            <li>Entity : Permet de manipuler des tables de la base de données</li>  
-            <li>Controller : Sert à passer à la vue (template) toute les données de la base de donnés issue des repository</li> 
-            <li>Repository : Permet de récuperer des infos de la base de données</li> 
+            <li>Entity : Permet de manipuler les tables de la base de données</li>  
+            <li>Controller :  Sert à transmettre à la vue (template) toutes les données de la base de données provenant des repositories</li> 
+            <li>Repository : Permet de récupérer des informations de la base de données</li> 
             <li>Service : Permet de mettre en place le fonctionnement du jeu </li>
         </ul>
     </div>
@@ -68,22 +68,22 @@
     
     <div class="row categorie">
     
-    <p>Pour crée ces informations nous avons donc utilisé plusieur commande sur le terminal</p>
-    <div class="col-6">   
-    <h3><u>Création Entity</u></h3>
-        bin/console make:entity <br>
-        Commande pour créer des Entity, dans notre cas nous avons créer Pastry et User
-        <h3><u>Création Controller</u></h3>
-        bin/console make:controller <br>
-        Commande pour créer des Controller,qui nous à permis de réaliser les messages des résultat obtenue
-    </div>
-    <div class="col-6">  
-        <h3><u>Création Repository</u></h3>
-        bin/console make:repository <br>
-            Commande pour créer des Repository, pour avoir les informations de l'utilisateur
-        <h3><u>Création Service</u></h3>
-        Ce fichier qui n'a pas été crée par le terminal determine les actions attendu pour effectuer le jeu
-    </div>
+        <p>Pour créer ces informations, nous avons donc utilisé plusieurs commandes sur le terminal.</p>
+        <div class="col-6">   
+            <h3><u>Création d'Entités</u></h3>
+                bin/console make:entity <br>
+                Commande pour créer des Entités. Dans notre cas, nous avons créé Pastry et User.
+                <h3><u>Création de Contrôleurs</u></h3>
+                bin/console make:controller <br>
+                Commande pour créer des Contrôleurs, ce qui nous a permis de réaliser les messages des résultats obtenus.
+            </div>
+            <div class="col-6">  
+                <h3><u>Création de Repositories</u></h3>
+                bin/console make:repository <br>
+                    Commande pour créer des Repositories, pour obtenir les informations de l'utilisateur.
+                <h3><u>Création de Services</u></h3>
+                Ce fichier, qui n'a pas été créé par le terminal, détermine les actions attendues pour effectuer le jeu.
+            </div>
 </div>  
 
 
@@ -91,7 +91,7 @@
     <div class="row categorie">
         <h1 class="text-center">BASE DE DONNÉES</h1>
     <div class="col-6">
-        <p>Nous avons créer une Base de donnée à l'aide de PHPmyAdmin en faisant des liaison entre elles avec la commande symfony make:entity puis en choisissant les relations </p>
+        <p>Nous avons créer une base de données à l'aide de PHPMyAdmin en établissant des liaisons entre elles avec la commande Symfony make:entity, puis en choisissant les relations</p>
     </div>
 
     <div class="col-6">
