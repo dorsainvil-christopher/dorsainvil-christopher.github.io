@@ -34,9 +34,9 @@
 </div>
 
 <div class="row">
-    <h1 class="text-center">RÈGLE DE JEU </h1>
+    <h1 class="text-center">RÈGLES DU JEU </h1>
         <div class="col-6">    
-            <p>Les utilisateurs doivent lancée 5 dés, si ils obtiennent une combinaison gagnante, ils remporte des pâtisseries en fonction de la combinaison. L'utilisateur pourras rejouer autant de fois que l'on souhaite. Voici les combinaisons gagnantes
+            <p>Les utilisateurs doivent lancer 5 dés, s'ils obtiennent une combinaison gagnante, ils remportent des pâtisseries en fonction de la combinaison. L'utilisateur pourra rejouer autant de fois qu'il le souhaite. Voici les combinaisons gagnantes :
                 <ul>
                     <li>Un Yams : Gagne 4 pâtisseries</li>
                     <li>Un Carré : Gagne 3 pâtisseries</li>
@@ -46,7 +46,26 @@
     </div>
     <div class="col-6 ">
         <h3><u>Page de l'application:</u></h3>
-        <img class="presentation"  src="img/gamepastry.png"   alt="">
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/gamepastry.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/gamepastry gagnant.png" class="d-block w-100" alt="...">
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
 
     </div>
 </div>
@@ -68,21 +87,33 @@
     
     <div class="row categorie">
     
-        <p>Pour créer ces informations, nous avons donc utilisé plusieurs commandes sur le terminal.</p>
+        <p>Pour créer ces informations, nous avons donc utilisé plusieurs commandes sur le terminal</p>
         <div class="col-6">   
             <h3><u>Création d'Entités</u></h3>
                 bin/console make:entity <br>
-                Commande pour créer des Entités. Dans notre cas, nous avons créé Pastry et User.
-                <h3><u>Création de Contrôleurs</u></h3>
+                Commande pour créer des Entités. Dans notre cas, nous avons créé Pastry et User
+        </div>
+        <div class="col-6"></div>
+         
+        <div class="col-6"></div>
+        <div class="col-6">
+                <h3><u>Création de Controller</u></h3>
                 bin/console make:controller <br>
-                Commande pour créer des Contrôleurs, ce qui nous a permis de réaliser les messages des résultats obtenus.
+                Commande pour créer des Contrôleurs, ce qui nous a permis de réaliser les messages des résultats obtenus
             </div>
-            <div class="col-6">  
+    
+           
+        <div class="col-6">  
                 <h3><u>Création de Repositories</u></h3>
                 bin/console make:repository <br>
-                    Commande pour créer des Repositories, pour obtenir les informations de l'utilisateur.
+                    Commande pour créer des Repositories, pour obtenir les informations de l'utilisateur
+        </div>
+        <div class="col-6"></div>
+        
+        <div class="col-6"></div>
+        <div class="col-6">    
                 <h3><u>Création de Services</u></h3>
-                Ce fichier, qui n'a pas été créé par le terminal, détermine les actions attendues pour effectuer le jeu.
+                Ce fichier, qui n'a pas été créé par le terminal, détermine les actions attendues pour effectuer le jeu
             </div>
 </div>  
 
@@ -97,6 +128,7 @@
     <div class="col-6">
         <img class="presentation" src="img/Base de donnée.png"   alt="">
     </div>
-    </div> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
