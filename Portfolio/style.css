@@ -98,7 +98,8 @@ header h2{
     margin-top: 50px;
 }
 .presentation {
-   width: 70%;
+   width: 400px !important;
+   height: 300px !important;
    margin-top: 10px;
    margin-bottom: 30px;
 }
