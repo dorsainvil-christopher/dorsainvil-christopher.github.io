@@ -9,39 +9,94 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <div id="blog" class="container">
-         <h1>Projet Blog</h1>
-         <p>Le projets blog est un projet que j'ai éffectuer avec mon collegue appelé Milton. ce projet a pour but de parler d'Esports. Bien que je sois encore au stade initial, j'ai l'intention de décrire progressivement les plans pour la création de mon site web, en détaillant chaque étape avec soin et méthode.</p>
-         <p>Description :</p>
 
-<ul>
-  <li>Merise</li>
-  <li>Base de Données</li>
-  <li>Page Categorie</li>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Protfolio Christopher DORSAINVIL </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="#">Contact </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
 
-</ul>
+<div id="blog" class="container">
+    <h1 class="text-center">PROJET GamePastry</h1>
+        <div class="col-6">         
+         <p>GamePastry est une application de jeu permettent de gagner des pâtisseries. l'application contient 2 pages:  Une pour jouer, une pour affiché les résultats</p>
+</div>
+
 <div class="row">
-    <div class="col">
-        <h1>Base de Données</h1>
-        <p>Pour commencer, nous avons opté pour la méthode Merise afin de modéliser et établir les relations fondamentales de la base de données. </p>
-        <div class="d-flex justify-content-center">
-        <img src="img/base de donnée.png"   alt="">
-        </div>
+    <h1 class="text-center">RÈGLE DE JEU </h1>
+        <div class="col-6">    
+            <p>Les utilisateurs doivent lancée 5 dés, si ils obtiennent une combinaison gagnante, ils remporte des pâtisseries en fonction de la combinaison. L'utilisateur pourras rejouer autant de fois que l'on souhaite. Voici les combinaisons gagnantes
+                <ul>
+                    <li>Un Yams : Gagne 4 pâtisseries</li>
+                    <li>Un Carré : Gagne 3 pâtisseries</li>
+                    <li>La grande suite : Gagne 1 pâtisserie</li>  
+                </ul>
+            </p>
+    </div>
+    <div class="col-6 ">
+        <h3><u>Page de l'application:</u></h3>
+        <img class="presentation"  src="img/gamepastry.png"   alt="">
+
     </div>
 </div>
-
-<div id="categorie" class="row">
-    <div class="col">
-        <h1>Page Categorie</h1>
-        <p>Nous arrivons maintenant sur la page categorie que j'ai moi même éffectuer.</p>
-        <div class="d-flex justify-content-center">
-        <img src="img/categories.png"   alt="">
-        </div>
+<div class="row categorie">
+    <h1 class="text-center">SYMFONY</h1>
+    <div class="col-8" >
+        <p>Nous avons mis en place le framwork Symfony afin d'accéder au informations souhaité</p> 
+           <ul>
+            <li>Entity : Permet de manipuler des tables de la base de données</li>  
+            <li>Controller : Sert à passer à la vue (template) toute les données de la base de donnés issue des repository</li> 
+            <li>Repository : Permet de récuperer des infos de la base de données</li> 
+            <li>Service : Permet de mettre en place le fonctionnement du jeu </li>
+        </ul>
     </div>
-</div>
-
-
-
+    <div class="col-4">
+        <img class="symfony" src="img/symfony.png" alt="">
     </div>
+    </div>
+    
+    <div class="row categorie">
+    
+    <p>Pour crée ces informations nous avons donc utilisé plusieur commande sur le terminal</p>
+    <div class="col-6">   
+    <h3><u>Création Entity</u></h3>
+        bin/console make:entity <br>
+        Commande pour créer des Entity, dans notre cas nous avons créer Pastry et User
+        <h3><u>Création Controller</u></h3>
+        bin/console make:controller <br>
+        Commande pour créer des Controller,qui nous à permis de réaliser les messages des résultat obtenue
+    </div>
+    <div class="col-6">  
+        <h3><u>Création Repository</u></h3>
+        bin/console make:repository <br>
+            Commande pour créer des Repository, pour avoir les informations de l'utilisateur
+        <h3><u>Création Service</u></h3>
+        Ce fichier qui n'a pas été crée par le terminal determine les actions attendu pour effectuer le jeu
+    </div>
+</div>  
+
+
+
+    <div class="row categorie">
+        <h1 class="text-center">BASE DE DONNÉES</h1>
+    <div class="col-6">
+        <p>Nous avons créer une Base de donnée à l'aide de PHPmyAdmin en faisant des liaison entre elles avec la commande symfony make:entity puis en choisissant les relations </p>
+    </div>
+
+    <div class="col-6">
+        <img class="presentation" src="img/Base de donnée.png"   alt="">
+    </div>
+    </div> 
 </body>
 </html>
