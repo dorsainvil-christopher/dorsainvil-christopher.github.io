@@ -104,3 +104,38 @@ header h2{
    margin-bottom: 30px;
 }
 
+
+input[type=text], textarea, input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+    
+  }
+  label{margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    color: #ffffff;
+
+}
+  
+  input[type=submit] {
+    background-color: gray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #contact h1{
+    margin-bottom: 20px;
+    margin-top: 50PX;
+    color: #ffffff;
+  }
+
