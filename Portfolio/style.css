@@ -103,7 +103,11 @@ header h2{
    margin-top: 10px;
    margin-bottom: 30px;
 }
-
+.presentations{
+    width: 400px;
+    margin-top: 10px;
+   margin-bottom: 30px;
+}
 
 input[type=text], textarea, input[type=email] {
     width: 100%;
@@ -137,5 +141,9 @@ input[type=text], textarea, input[type=email] {
     margin-bottom: 20px;
     margin-top: 50PX;
     color: #ffffff;
+  }
+  .code{
+    width: 300px;
+    height: 240px;
   }
 

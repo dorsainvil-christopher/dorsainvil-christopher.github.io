@@ -49,24 +49,32 @@
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img/gamepastry.png" class="d-block w-100& presentation" alt="...">
+              <img src="img/gamepastry.png" class=" presentation" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="img/gamepastry gagnant.png" class="d-block w-100 presentation" alt="...">
+              <img src="img/gamepastry gagnant.png" class=" presentation" alt="...">
             </div>
           </div>
         </div>
-              
-              
-         
-        
-
     </div>
+</div>
+
+<div class="row categorie">
+    <h1 class="text-center">BASE DE DONNÉES</h1>
+    <div class="col-6">
+        <img class="presentations" src="img/Base de donnée.png"   alt="">
+    </div>
+
+<div class="col-6">
+    <p>Nous avons créer une base de données à l'aide de PHPMyAdmin en établissant des liaisons entre elles avec la commande Symfony make:entity, puis en choisissant les relations</p>
+</div>
+
+
 </div>
 <div class="row categorie">
     <h1 class="text-center">SYMFONY</h1>
     <div class="col-8" >
-        <p>Nous avons mis en place le framework Symfony afin d'accéder aux informations souhaitées</p> 
+        <p>Nous avons mis en place le framework Symfony qui nous sert a accéler la création et la maintenance des applications afin d'accéder aux informations souhaitées</p> 
            <ul>
             <li>Entity : Permet de manipuler les tables de la base de données</li>  
             <li>Controller :  Sert à transmettre à la vue (template) toutes les données de la base de données provenant des repositories</li> 
@@ -79,17 +87,23 @@
     </div>
     </div>
     
-    <div class="row categorie">
+    <div class="row categorie" style="margin-bottom: 50px;">
+
+        <p></p>
     
         <p>Pour créer ces informations, nous avons donc utilisé plusieurs commandes sur le terminal</p>
         <div class="col-6">   
             <h3><u>Création d'Entités</u></h3>
                 bin/console make:entity <br>
-                Commande pour créer des Entités. Dans notre cas, nous avons créé Pastry et User
+                Commande pour créer des Entités. Dans notre cas, nous avons créé des objets Pastry et User
         </div>
-        <div class="col-6"></div>
+        <div class="col-6">
+            <img class="code" src="img/codeENTITY.png" alt="">
+        </div>
          
-        <div class="col-6"></div>
+        <div class="col-6">
+            <img class="code" src="img/codeCONTRO.png" alt="">
+        </div>
         <div class="col-6">
                 <h3><u>Création de Controller</u></h3>
                 bin/console make:controller <br>
@@ -102,27 +116,23 @@
                 bin/console make:repository <br>
                     Commande pour créer des Repositories, pour obtenir les informations de l'utilisateur
         </div>
-        <div class="col-6"></div>
+        <div class="col-6">
+            <img class="code" src="img/codeREPO.png" alt="">
+        </div>
         
-        <div class="col-6"></div>
+        <div class="col-6"> 
+            <img class="code" src="img/codeSERVICES.png" alt="">
+        </div>
         <div class="col-6">    
                 <h3><u>Création de Services</u></h3>
                 Ce fichier, qui n'a pas été créé par le terminal, détermine les actions attendues pour effectuer le jeu
             </div>
 </div>  
+<P>CONCLUSION</P>
 
 
 
-    <div class="row categorie">
-        <h1 class="text-center">BASE DE DONNÉES</h1>
-    <div class="col-6">
-        <p>Nous avons créer une base de données à l'aide de PHPMyAdmin en établissant des liaisons entre elles avec la commande Symfony make:entity, puis en choisissant les relations</p>
-    </div>
-
-    <div class="col-6">
-        <img class="presentation" src="img/Base de donnée.png"   alt="">
-    </div>
-    </div>
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
